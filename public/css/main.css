@@ -278,3 +278,147 @@ body {
 .nav__block.active__nav {
 	right: 0 !important;
 }
+.content__block {
+	padding-top: 40px;
+	overflow: hidden;
+}
+.inside__content {
+	border-top: 2px solid #808080;
+}
+.poster__size {
+	width: 180px;
+	box-sizing: border-box;
+}
+.item img {
+	width: 100%;
+}
+.item {
+	border-left: 2px solid #808080;
+	border-bottom: 2px solid #808080;
+	text-align: center;
+}
+.item a {
+	display: block;
+	line-height: 1.1;
+}
+.item a:focus {
+	text-decoration: none;
+}
+.item a:hover {
+	text-decoration: none;
+}
+.item .poster__title {
+	display: block;
+	font-weight: bold;
+	padding: 5px 10px;
+	color: #6c0066;
+}
+.item .descriptions {
+	font-size: 13px;
+	color: #808080;
+	display: block;
+	padding: 0 10px 5px;
+}
+.item .lang__span {
+	font-size: 14px;
+	display: block;
+	padding: 5px 10px;
+	color: #808080;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
