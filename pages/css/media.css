@@ -79,7 +79,7 @@
 	.comment__header {
 		text-align: left;
 	}
-}
+}  
 
 @media only screen and (max-width : 640px) {
 	.desktop__search_btn {
