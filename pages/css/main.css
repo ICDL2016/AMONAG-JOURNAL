@@ -2141,7 +2141,7 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
 }
 .comment__header {
 	text-align: center;
-	padding: 10px 0;
+	padding: 10px 0 7px;
 	color: #fff;
 }
 .comment__header .comment__btn {
@@ -2181,7 +2181,7 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
 .comment__block {
 	max-width: 1000px;
 	margin: 0 auto;
-	padding: 0 10px 20px;
+	padding: 0 10px 0;
 }
 .purple__btn {
 	display: block;
@@ -2222,21 +2222,28 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
 	float: left;
 	font-size: 14px;
 	line-height: 1;
+	color: #6d206d;
+}
+.comment__links .email__comment a {
+	text-decoration: none;
+	color: #6d206d;
+}
+.comment__links .email__comment a:hover {
+	text-decoration: underline;
 }
 .comment__links .comment__href {
 	float: right;
 }
-.comment__href .write__comment {
+.comment__href button {
 	background: none;
 	border: none;
 	font-size: 14px;
 	color: #6d206d;
 	line-height: 1;
 	text-decoration: none;
-	margin-left: 15px;
 	cursor: pointer;
 }
-.comment__href .write__comment:hover {
+.comment__href .button:hover {
 	text-decoration: underline;
 }
 .open__write_block .textarea__block {
@@ -2247,22 +2254,75 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
 	font-size: 14px;
 	padding: 5px;
 	resize: none;
+	background: none;
 }
 .open__write_block {
 	padding: 10px 0 0;
 	display: none;
 }
 .open__write_block .purple__btn {
-	margin: 0 auto;
+	margin: 0 auto 10px;
 }
-
-
-
-
-
-
-
-
+.inner__comments {
+	overflow: hidden;
+	background: #ececec;
+	border: 1px solid #d1d1d1;
+	padding: 10px;
+	font-size: 14px;
+	color: #666666;
+	line-height: 1.2;
+	margin: 2px 0;
+}
+.email__comment .data__email {
+	color: #666666;
+	padding-right: 5px;
+	font-size: 11px;
+}
+.inside__comment_space {
+	margin: 0 0 0 15px;
+}
+.turn__btn.active .open {
+	display: none;
+}
+.turn__btn.active .close {
+	display: block;
+}
+.turn__btn .close {
+	display: none;
+}
+.comment__text {
+	display: block;
+	height: 33px;
+	overflow: hidden;
+}
+.comment__text.show {
+	height: auto;
+}
+.page_nav {
+	display: block;
+	overflow: hidden;
+	text-align: center;
+	padding: 25px 0;
+}
+.page_nav li {
+	display: inline-block;
+}
+.page_nav li a {
+	display: block;
+	width: 25px;
+	height: 25px;
+	text-align: center;
+	font-size: 14px;
+	text-decoration: none;
+	background: #dfdfdf;
+	color: #666;
+	line-height: 27px;
+	transition: 0.3s;
+}
+.page_nav li a.active,
+.page_nav li a:hover {
+	background: #ffffff;
+}
 
 
 

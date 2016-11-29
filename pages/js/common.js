@@ -324,10 +324,38 @@ $( ".comment__btn" ).click(function() {
 	});
 });
 
-$( ".comment__block_edit .write__comment" ).click(function() {
-	$(".open__write_block").slideToggle( "slow", function() {
+$( ".write__comment" ).click(function() {
+	$( this ).parent().parent().parent().next('.open__write_block').slideToggle( "slow", function() {
 	});
 });
+
+$( ".write__comment" ).click(function() {
+	$( this ).parent().parent().parent().parent().next('.open__write_block').slideToggle( "slow", function() {
+	});
+});
+
+$( ".turn__btn" ).click(function() {
+	$( this ).toggleClass( "active" );
+});
+
+
+
+$( ".turn__btn" ).click(function() {
+	$( this ).parent().parent().parent().parent().find('.comment__text').toggleClass( "show" );
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

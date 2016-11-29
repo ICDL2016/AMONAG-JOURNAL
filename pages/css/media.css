@@ -73,6 +73,12 @@
 	.site .content .marketing__research__block .courses .courses__left {
 		height: auto !important;
 	}
+	.comment__header span {
+		margin: 0;
+	}
+	.comment__header {
+		text-align: left;
+	}
 }
 
 @media only screen and (max-width : 640px) {
