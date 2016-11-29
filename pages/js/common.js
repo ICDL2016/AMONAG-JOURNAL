@@ -319,9 +319,15 @@ $(document).ready(function(){
 }); // end script
 
 
+$( ".comment__btn" ).click(function() {
+	$( ".hide__open_block" ).slideToggle( "slow", function() {
+	});
+});
 
-
-
+$( ".comment__block_edit .write__comment" ).click(function() {
+	$(".open__write_block").slideToggle( "slow", function() {
+	});
+});
 
 
 
