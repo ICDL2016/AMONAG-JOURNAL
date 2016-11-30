@@ -30,6 +30,7 @@
 
 	<script src="libs/modernizr/modernizr.js"></script>
 
+	<link rel="stylesheet" type="text/css" href="source/jquery.fancybox.css?v=2.1.5" media="screen" />
 
 </head>
 
@@ -39,6 +40,8 @@
 			<div class="logo__block jQtooltip" title="Главная страница">
 				<a href="index.html"><img src="img/logo.png" alt=""></a>
 			</div>
+
+
 			<ul class="nav__btn">
 				<li>
 					<span class="language jQtooltip" title="Сменить язык сайта">Ru</span>
@@ -72,51 +75,43 @@
 	</header>
 	<div class="sidebar__nav">
 		<ul>
-			<li><a href="#">Все курсы</a></li>
-			<li><a href="#">Языковые курсы</a></li>
-			<li><a href="#">Маркетинг и реклама</a></li>
-			<li><a href="#">Экономика</a></li>
-			<li><a href="#">Дизайн</a></li>
-			<li><a href="#">Мода</a></li>
-			<li><a href="#">Психология</a></li>
-			<li><a href="#">Ресторанный бизнес</a></li>
-			<li><a href="#">Гостиничный бизнес</a></li>
-			<li><a href="#">Журналистика и массовые коммуникации</a></li>
-			<li><a href="#">AMONAG ACADEMY</a></li>
-			<li><a href="#">Блог</a></li>
+			<li><a href="#">Мои подписки</a></li>
+			<li><a href="#">Мои тесты</a></li>
+			<li><a href="#">Мои ресурсы</a></li>
 			<li><a href="#">Вопросы и ответы</a></li>
-			<li><a href="#">Контакты</a></li>
+			<li><a href="#">Техподдержка</a></li>
+			<li><a href="#">Найти новые курсы</a></li>
 		</ul>
 	</div>
-
 	<div class="content">
 
+		<div class="content__restaurant_bs">
 
-		
-		<div class="content__item">
 			<div class="amonag__content">
 				<div class="inside__content">
-					<h3>Редактирование профиля</h3>
-					<div class="contact__form">
-						<form action="">
-							<input id="name" name="name" type="text" placeholder="Имя" value="Имя" />
-							<div class="error-box top__min"></div>
-							<input type="text" placeholder="Фамилия" value="Фамилия" />
-							<input type="text" placeholder="Дата рождения" value="Дата рождения" />
-							<input id="email" name="email" type="text" placeholder="E-mail" value="E-mail" />
-							<div class="error-box top__min"></div>
-							<input type="text" placeholder="Телефон" value="Телефон" />
-							<input type="text" placeholder="Адрес" value="Адрес" />
-							<input type="submit" value="Сохранить профиль">
-						</form>
-						<a class="forgot__password" href="#">Отменить редактирование</a>
-					</div>
-				</div>
+					<h3 class="check__in">Уведомления
+						<a href="#"><i class="fa fa-question-circle" aria-hidden="true"></i></a>
+					</h3>
+
+					<ul class="notice__ul">
+						<li><span>22.11.206 11:19</span> <a href="#">К вашему комментарию №1231 добавлен комментарий пользователем user453</a></li>
+						<li><span>21.11.206 17:09</span> <a href="#">К вашему комментарию №31 добавлен комментарий пользователем xuser-1</a></li>
+						<li><span>20.11.206 19:09</span> <a href="#">Заказ на создание статьи создан</a></li>
+						<li><span>20.11.206 18:29</span> <a href="#">Создайте свои мультиязычные статьи</a></li>
+						<li><span>20.11.206 17:09</span> <a href="#">Благодарим Вас за подписку на журнал амонаг</a></li>
+					</ul>
+
+				</div><!-- .inside__content -->
 			</div>
 
-		</div><!-- .content__item -->
 
-	</div>
+
+
+		</div>
+
+
+
+	</div> <!-- the end -->
 
 
 
@@ -144,7 +139,15 @@
 	<script src="libs/plugins-scroll/plugins-scroll.js"></script>
 	<script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
 	<script src="js/masonry.pkgd.min.js"></script>
+	<script type="text/javascript" src="source/jquery.fancybox.js?v=2.1.5"></script>
 	<script src="js/common.js"></script>
+	<script>
+		$('.fancybox').fancybox();
 
+		$(".tab__cont .tab").click(function() {
+			$(".tab__cont .tab").removeClass("active").eq($(this).index()).addClass("active");
+			$(".tab_btn").hide().eq($(this).index()).fadeIn()
+		}).eq(0).addClass("active");
+	</script>
 </body>
 </html>

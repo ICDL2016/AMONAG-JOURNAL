@@ -548,7 +548,7 @@ img {
 }
 .amonag__content {
 	background: #fff;
-	padding: 10px;
+	padding: 15px 10px;
 }
 .inside__content {
 	max-width: 1000px;
@@ -2397,14 +2397,89 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
 .profile__title {
 	margin: 10px 0 0 !important;
 }
-
-
-
-
-
-
-
-
-
-
-
+.personal__area_btn {
+	padding: 10px 0 15px;
+}
+.tab_btn {
+	display: none;
+}
+.tab_btn:first-child {
+	display: block;
+}
+.sponsorship__block .tab__cont {
+	width: 260px;
+	margin: 0 auto;
+}
+.sponsorship__block .tab__cont .tabs {
+	overflow: hidden;
+}
+.sponsorship__block .tab__cont .tab {
+	display: block;
+	width: 33.33%;
+	float: left;
+	cursor: pointer;
+	text-align: center;
+	color: #6d206d;
+	font-size: 13px;
+	transition: 0.3s;
+	border-left: 1px solid #660066;
+	border-top: 1px solid #660066;
+	box-sizing: border-box;
+	padding: 15px 0;
+}
+.sponsorship__block .tab__cont .tab:last-child {
+	border-right: 1px solid #660066;
+}
+.sponsorship__block .tab__cont .tab span.pr {
+	display: block;
+	font-weight: bold;
+	font-size: 15px;
+}
+.sponsorship__block .tab__cont .tab:hover,
+.tab__cont .tab.active {
+	background: #6d206d;
+	color: #fff;
+}
+.tab_content a {
+	display: block;
+	font-size: 14px;
+	text-align: center;
+	background: #6d206d;
+	color: #fff;
+	text-decoration: none;
+	padding: 15px 0;
+	border: 1px solid #660066;
+	box-sizing: border-box;
+	width: 259px;
+}
+.tab_content a span {
+	display: block;
+	font-weight: bold;
+	font-size: 17px;
+}
+.tab__cont .tab_content {
+	padding-top: 0;
+}
+.tab_content a:hover {
+	background: #8f1f8f;
+}
+.sponsorship__block {
+	padding: 30px 0 50px;
+}
+.notice__ul {
+	padding: 15px 0;
+}
+.notice__ul li {
+	margin-bottom: 10px;
+	font-size: 14px;
+}
+.notice__ul li span {
+	color: #3e3e3e;
+}
+.notice__ul li a {
+	color: #6d206d;
+	font-weight: bold;
+}
+.notice__ul li a:hover {
+	text-decoration: none;
+}
