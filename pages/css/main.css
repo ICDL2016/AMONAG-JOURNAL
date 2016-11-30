@@ -2384,8 +2384,17 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
 .two__lang_block>div.second__lang {
 	padding-right: 0;
 }
-
-
+.quest__span {
+	display: block;
+	text-align: center;
+	font-size: 14px;
+	color: #808080;
+	padding: 30px 10px 15px;
+}
+.check__in a {
+	color: #6d206d;
+	font-size: 25px;
+}
 
 
 
