@@ -106,6 +106,12 @@
 	.form__contact_block label textarea {
 		width: 100%;
 	}
+	.page_nav {
+		padding: 20px 15px;
+	}
+	.page_nav li {
+		margin-bottom: 5px;
+	}
 	
 }
 @media only screen and (max-width : 580px) {
@@ -146,6 +152,11 @@
 	}
 	.nav__btn li .sidebar__nav {
 		width: 180px;
+	}
+	.two__lang_block>div {
+		padding: 0;
+		float: none;
+		width: 100%;
 	}
 
 }
