@@ -206,9 +206,9 @@ img {
 }
 .icon__enter {
 	color: #fff;
-	font-size: 20px;
+	font-size: 21px;
 	line-height: 1;
-	padding: 13px 0 5px 0;
+	padding: 11px 0 8px 0;
 	display: block;
 	text-align: center;
 }
@@ -290,6 +290,9 @@ img {
 }
 .item-masonry a:hover, .item-masonry_post a:hover {
 	background-color: #8f228f;
+}
+.item-masonry a:hover .rating span {
+	color: #fff;
 }
 .item-masonry .item__title,.item-masonry_post .item__title {
 	display: block;
@@ -396,7 +399,7 @@ img {
 	border-top: 2px solid #808080;
 }
 .sidebar__nav a:hover {
-	background: #8f228f;
+	background: rgba(109,32,109,1);
 }
 .payment {
 	width: 180px;
@@ -427,7 +430,7 @@ img {
 	margin-top: 2px;
 }
 .nav__btn li .lang__list li a:hover {
-	background-color: #8f228f;
+	background: rgba(109,32,109,1);
 }
 .mobile__search_btn {
 	display: none;
@@ -2080,6 +2083,7 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
 .users__login {
 	display: block;
 	font-size: 12px;
+	color: #6d206d;
 }
 .item-masonry a:hover .users__login {
 	color: #fff;
@@ -2087,8 +2091,8 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
 .status__pr {
 	display: block;
 	text-transform: uppercase;
-	padding: 8px;
-	font-size: 12px;
+	padding: 8px 0 4px;
+	font-size: 10px;
 	color: #808080;
 }
 .item-masonry a:hover .status__pr {
@@ -2096,6 +2100,10 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
 }
 .rating {
 	color: #808080;
+	font-size: 12px;
+}
+.rating span {
+	color: #8f228f;
 }
 .item-masonry a:hover .rating {
 	color: #fff;
@@ -2124,6 +2132,13 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
 .blocks__free div.bl__n1 {
 	text-align: left;
 }
+.blocks__free div.bl__n1 a {
+	color: #8f228f;
+	text-decoration: none;
+}
+.blocks__free div.bl__n1 a:hover {
+	text-decoration: underline;
+}
 .blocks__free div.bl__n2 {
 	text-align: center;
 }
@@ -2136,8 +2151,12 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
 .blocks__free div.bl__n3 a:hover {
 	text-decoration: none;
 }
-.blocks__free div.bl__n2 span {
+.blocks__free div.bl__n2 a {
 	color: #8f228f;
+	text-decoration: none;
+}
+.blocks__free div.bl__n2 a:hover span {
+	text-decoration: underline;
 }
 .comment__header {
 	text-align: center;
@@ -2146,9 +2165,9 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
 }
 .comment__header .comment__btn {
 	float: right;
-	display: inline-block;
+	display: block;
 	color: #fff;
-	padding: 10px 20px;
+	padding: 10px 0;
 	background: #6d206d;
 	line-height: 1;
 	text-decoration: none;
@@ -2156,6 +2175,8 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
 	cursor: pointer;
 	font-size: 14px;
 	transition: 0.3s;
+	width: 160px;
+	height: 40px;
 }
 .comment__header span {
 	margin-right: -15%;
@@ -2185,13 +2206,14 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
 }
 .purple__btn {
 	display: block;
-	width: 280px;
+	width: 160px;
 	text-align: center;
 	background: #6d206d;
 	color: #fff;
 	text-decoration: none;
 	line-height: 1;
-	padding: 10px 0;
+	padding: 13px 0;
+	font-size: 14px;
 }
 .purple__btn:hover {
 	background: #8f228f;
@@ -2203,10 +2225,10 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
 	padding: 10px 0;
 	display: none;
 }
-.hide__open_block .textarea__block::-webkit-input-placeholder {color:#fff;}
-.hide__open_block .textarea__block::-moz-placeholder          {color:#fff;}/* Firefox 19+ */
-.hide__open_block .textarea__block:-moz-placeholder           {color:#fff;}/* Firefox 18- */
-.hide__open_block .textarea__block:-ms-input-placeholder      {color:#fff;}
+.hide__open_block .textarea__block::-webkit-input-placeholder {color:#dedddd;}
+.hide__open_block .textarea__block::-moz-placeholder          {color:#dedddd;}/* Firefox 19+ */
+.hide__open_block .textarea__block:-moz-placeholder           {color:#dedddd;}/* Firefox 18- */
+.hide__open_block .textarea__block:-ms-input-placeholder      {color:#dedddd;}
 .comment__block_edit {
 	background: #fff;
 	border: 1px solid #a7a7a7;
@@ -2243,7 +2265,7 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
 	text-decoration: none;
 	cursor: pointer;
 }
-.comment__href .button:hover {
+.comment__href button:hover {
 	text-decoration: underline;
 }
 .open__write_block .textarea__block {
@@ -2255,6 +2277,7 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
 	padding: 5px;
 	resize: none;
 	background: none;
+	color: #fff;
 }
 .open__write_block {
 	padding: 10px 0 0;
@@ -2263,6 +2286,28 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
 .open__write_block .purple__btn {
 	margin: 0 auto 10px;
 }
+
+
+.open__write_block-edit .textarea__block {
+	width: 100%;
+	height: 100px;
+	margin-bottom: 5px;
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	padding: 5px;
+	resize: none;
+	background: none;
+	color: #fff;
+}
+.open__write_block-edit {
+	padding: 10px 0 0;
+	display: none;
+}
+.open__write_block-edit .purple__btn {
+	margin: 0 auto 10px;
+}
+
+
 .inner__comments {
 	overflow: hidden;
 	background: #ececec;

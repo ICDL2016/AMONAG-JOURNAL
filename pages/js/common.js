@@ -338,12 +338,14 @@ $( ".turn__btn" ).click(function() {
 	$( this ).toggleClass( "active" );
 });
 
-
-
 $( ".turn__btn" ).click(function() {
 	$( this ).parent().parent().parent().parent().find('.comment__text').toggleClass( "show" );
 });
 
+$( "button.edit__button" ).click(function() {
+	$( this ).parent().parent().parent().parent().parent().find('.open__write_block-edit').slideToggle( "slow", function() {
+	});
+});
 
 
 
