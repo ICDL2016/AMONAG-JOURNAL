@@ -347,8 +347,13 @@ $( "button.edit__button" ).click(function() {
 	});
 });
 
+$( ".articles__header .icon a" ).click(function() {
+	$( this ).toggleClass( "active" );
+});
 
-
+$( ".what__is_it" ).click(function() {
+	$( '.what__is_it .explained' ).fadeToggle( 300 );
+});
 
 
 

@@ -460,9 +460,7 @@ img {
 	left: 0;
 	width: 120px;
 }
-.content__restaurant_bs {
-	overflow: hidden;
-}
+
 .content__restaurant_bs .restaurant__sidebar {
 	width: 180px;
 	float: left;
@@ -767,7 +765,13 @@ a.forgot__password:hover {
 	color: rgba(143,34,143,0.9);
 }
 .contact__form form:hover {
-	background: #6d206d;
+	background: #930c93;
+}
+.contact__form form:hover input {
+	border-color: #930c93;
+}
+.check__in a:hover {
+	color: #930c93;
 }
 .money__pr .rur {
 	font-size: 18px;
@@ -2146,9 +2150,10 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
 }
 .blocks__free div.bl__n3 a {
 	color: #8f228f;
+	text-decoration: none;
 }
 .blocks__free div.bl__n3 a:hover {
-	text-decoration: none;
+	text-decoration: underline;
 }
 .blocks__free div.bl__n2 a {
 	color: #8f228f;
@@ -2426,6 +2431,7 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
 	border-top: 1px solid #660066;
 	box-sizing: border-box;
 	padding: 15px 0;
+	background: #fff;
 }
 .sponsorship__block .tab__cont .tab:last-child {
 	border-right: 1px solid #660066;
@@ -2479,7 +2485,121 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
 .notice__ul li a {
 	color: #6d206d;
 	font-weight: bold;
+	text-decoration: none;
+}
+.notice__ul li a.active {
+	font-weight: normal;
 }
 .notice__ul li a:hover {
+	text-decoration: underline;
+}
+.without__search {
+	padding-top: 14px !important;
+}
+.notice__icon {
+	color: #fff;
+	font-size: 18px;
+	text-transform: uppercase;
+	cursor: pointer;
+	padding: 5px 0 2px 0;
+	line-height: 33px;
+	display: block;
+	text-align: center;
+}
+.back__to_list {
+	text-align: center;
+}
+.back__to_list a {
+	color: #3e3e3e;
+}
+.back__to_list a:hover {
+	color: #6d206d;
 	text-decoration: none;
+}
+.notifications__text {
+	color: #6d206d;
+	font-size: 16px;
+	line-height: 1.3;
+}
+.quest__btn_support {
+	padding: 12px 0 10px;
+	border: none;
+	text-align: center;
+	text-decoration: none;
+	background-color: #6d206d;
+	color: #fff;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 21px;
+	transition: 0.3s;
+	width: 280px;
+	display: block;
+	margin: 15px auto;
+}
+.item-masonry .sponsorship__block .tab__cont {
+	width: 180px;
+}
+.item-masonry .tab_content a {
+	width: 180px;
+}
+.item-masonry .sponsorship__block {
+	padding: 0;
+	margin-top: -2px;
+}
+.item-masonry .sponsorship__block .tab__cont .tab {
+	background: #f3f3f3;
+}
+.item-masonry .sponsorship__block .tab__cont .tab:hover,
+.item-masonry .tab__cont .tab.active {
+	background: #6d206d;
+}
+.articles__header .icon {
+	float: left;
+}
+.articles__header .icon a {
+	color: #666666;
+	font-size: 24px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+.articles__header .icon a:hover,
+.articles__header .icon a.active{
+	color: #6d206d !important;
+}
+.check__in a {
+	position: relative;
+}
+.check__in a .explained {
+	display: none;
+	width: 300px;
+	background: #c7c7c7;
+	position: absolute;
+	left: 30px;
+	top: 0;
+	font-weight: normal;
+	font-size: 12px;
+	text-align: left;
+	padding: 10px;
+	color: #404040;
+	border-radius: 4px;
+	-webkit-box-shadow: 0px 0px 15px 0px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    0px 0px 15px 0px rgba(50, 50, 50, 0.75);
+	box-shadow:         0px 0px 15px 0px rgba(50, 50, 50, 0.75);
+	line-height: 1.2;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+.check__in a .explained i {
+	display: block;
+	float: right;
+	font-size: 14px;
+	font-weight: bold;
+	background: #6d206d;
+	padding: 3px 0 0 6px;
+	border-radius: 50%;
+	color: #fff;
+	line-height: 1;
+	width: 21px;
+	height: 21px;
+	box-sizing: border-box;
 }
