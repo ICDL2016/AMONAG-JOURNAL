@@ -2109,8 +2109,8 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
 	color: #fff;
 }
 .jQtooltip.txtool div {
-	top: 20px !important;
-	right: 10px !important;
+	top: 100% !important;
+	right: 15px !important;
 }
 .jQtooltip.txtool {
 	cursor: pointer;
@@ -2162,6 +2162,7 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
 	text-align: center;
 	padding: 10px 0 7px;
 	color: #fff;
+	overflow: hidden;
 }
 .comment__header .comment__btn {
 	float: right;
@@ -2368,9 +2369,21 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
 .page_nav li a:hover {
 	background: #ffffff;
 }
-
-
-
+.two__lang_block {
+	overflow: hidden;
+}
+.two__lang_block>div {
+	float: left;
+	width: 50%;
+	padding: 10px;
+	box-sizing: border-box;
+}
+.two__lang_block>div.first__lang {
+	padding-left: 0;
+}
+.two__lang_block>div.second__lang {
+	padding-right: 0;
+}
 
 
 
