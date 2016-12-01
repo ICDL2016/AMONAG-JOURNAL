@@ -352,9 +352,12 @@ $( ".articles__header .icon a" ).click(function() {
 });
 
 $( ".what__is_it" ).click(function() {
-	$( '.what__is_it .explained' ).fadeToggle( 300 );
+	$( this ).find('.explained').fadeToggle( 300 );
 });
 
+$( ".order__lang li a" ).click(function() {
+	$( this ).toggleClass( "active" );
+});
 
 
 

@@ -460,7 +460,6 @@ img {
 	left: 0;
 	width: 120px;
 }
-
 .content__restaurant_bs .restaurant__sidebar {
 	width: 180px;
 	float: left;
@@ -2588,6 +2587,7 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
 	line-height: 1.2;
 	box-sizing: border-box;
 	overflow: hidden;
+	z-index: 999;
 }
 .check__in a .explained i {
 	display: block;
@@ -2602,4 +2602,130 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
 	width: 21px;
 	height: 21px;
 	box-sizing: border-box;
+}
+.ord__span {
+	display: block;
+	text-align: center;
+	padding-bottom: 5px;
+	color: #808080;
+	font-size: 12px;
+}
+.ord__span:last-child {
+	padding-bottom: 10px;
+}
+.item-masonry a:hover .ord__span {
+	color: #fff;
+}
+.order__lang {
+	display: block;
+	overflow: hidden;
+	padding: 15px 0;
+	text-align: center;
+}
+.order__lang li {
+	display: inline-block;
+	margin-bottom: 4px;
+}
+.order__lang li a {
+	color: #fff;
+	text-transform: uppercase;
+	background: #a0a0a0;
+	text-decoration: none;
+	width: 46px;
+	height: 46px;
+	display: block;
+	text-align: center;
+	font-size: 16px;
+	line-height: 48px;
+}
+.order__lang li a:hover,
+.order__lang li a.active {
+	background: #751975;
+}
+.order__btns {
+	padding: 15px 0;
+}
+.send__form_block {
+	width: 280px;
+	margin: 0 auto;
+}
+.send__form_block .send__form_header {
+	overflow: hidden;
+	border: 1px solid #660066;
+}
+.send__form_block .send__form_header div {
+	float: left;
+	width: 50%;
+	text-align: center;
+	font-size: 14px;
+	padding: 7px;
+	box-sizing: border-box;
+}
+.send__form_block .send__form_header div.left__side_f {
+	color: #fff;
+	background: #751975;
+}
+.send__form_block .send__form_header div.right__side_f {
+	color: #751975;
+	font-size: 22px;
+	padding-top: 12px;
+}
+.textarea__order {
+	width: 100%;
+	border: 1px solid #660066;
+	resize: none;
+	padding: 7px;
+	box-sizing: border-box;
+	line-height: 1.2;
+	font-size: 14px;
+	font-family: Arial;
+	height: 100px;
+	margin: 10px 0 -3px;
+}
+.my__order_block {
+	overflow: hidden;
+	display: block;
+	text-align: center;
+}
+.my__order_block li {
+	width: 260px;
+	display: inline-block;
+	margin-bottom: 5px;
+}
+.order__content {
+	padding: 10px 55px;
+	border: 1px solid #660066;
+	border-bottom: none;
+	margin-right: 1px;
+}
+.orders__block {
+	position: relative;
+}
+.orders__block .mail {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	color: #660066;
+}
+.my__order_block .sponsorship__block {
+	padding: 0;
+}
+.order__content span {
+	display: block;
+	font-size: 15px;
+	color: #660066;
+	line-height: 1.2;
+}
+.order__content span.orders__number {
+	font-weight: bold;
+}
+.remove__order {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	background: #660066;
+	color: #fff;
+	padding: 3px 7px;
+	border-radius: 50%;
+	cursor: pointer;
 }
