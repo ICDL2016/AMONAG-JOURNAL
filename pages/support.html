@@ -89,8 +89,9 @@
 		<h3>Служба техподдержки</h3>
 
 		<div class="personal__inside top__min_sp">
-
-			<a class="quest__btn_support" href="#">Вопросы и ответы</a>
+			<div class="button__spacing">
+				<a class="quest__btn" href="#">Вопросы и ответы</a>
+			</div>
 
 			<div class="overrides">
 				<div class="overflow-wrap">
@@ -127,43 +128,13 @@
 							<tr oncontextmenu="return bxGrid_ticket_grid.settingsMenu" ondblclick="bxGrid_ticket_grid.EditCurrentView()" class="bx-grid-head">
 								<td width="1%" class="bx-actions-col bx-left"><a href="javascript:void(0);" onclick="bxGrid_ticket_grid.menu.ShowMenu(this, bxGrid_ticket_grid.settingsMenu, false, false, bxGrid_ticket_grid.SaveColumns);return false;" title="Настроить список" class="bx-action">
 									<div class="empty"></div></a></td>
-								<td onclick="bxGrid_ticket_grid.Sort('/personal/?by=s_lamp&amp;order=', 's_lamp', '', 'asc', arguments);" oncontextmenu="return [{'TEXT': 'Сортировать по возрастанию', 'ONCLICK':'bxGrid_ticket_grid.Sort('/personal/?by=s_lamp&amp;order=', 'desc')', 'ICONCLASS':'grid-sort-asc'}, {'TEXT': 'Сортировать по убыванию', 'ONCLICK':'bxGrid_ticket_grid.Sort('/personal/?by=s_lamp&amp;order=', 'asc')', 'ICONCLASS':'grid-sort-desc'}, {'TEXT': 'Скрыть колонку', 'ONCLICK':'bxGrid_ticket_grid.HideColumn('LAMP')', 'DISABLED':false}]" title="Сортировка: Индикатор" class="bx-sortable">
-									<table cellspacing="0" class="bx-grid-sorting">
-										<tbody>
-										<tr>
-											<td>Индикатор</td>
-											<td class="bx-sort-sign">
-												<div class="empty"></div>
-											</td>
-										</tr>
-										</tbody>
-									</table>
-								</td>
-								<td onclick="bxGrid_ticket_grid.Sort('/personal/?by=s_id&amp;order=', 's_id', '', 'asc', arguments);" oncontextmenu="return [{'TEXT': 'Сортировать по возрастанию', 'ONCLICK':'bxGrid_ticket_grid.Sort('/personal/?by=s_id&amp;order=', 'desc')', 'ICONCLASS':'grid-sort-asc'}, {'TEXT': 'Сортировать по убыванию', 'ONCLICK':'bxGrid_ticket_grid.Sort('/personal/?by=s_id&amp;order=', 'asc')', 'ICONCLASS':'grid-sort-desc'}, {'TEXT': 'Скрыть колонку', 'ONCLICK':'bxGrid_ticket_grid.HideColumn('ID')', 'DISABLED':false}]" title="Сортировка: ID" class="bx-sortable">
-									<table cellspacing="0" class="bx-grid-sorting">
-										<tbody>
-										<tr>
-											<td>ID</td>
-											<td class="bx-sort-sign">
-												<div class="empty"></div>
-											</td>
-										</tr>
-										</tbody>
-									</table>
-								</td>
+
+								<td oncontextmenu="return [{'TEXT': 'Скрыть колонку', 'ONCLICK':'bxGrid_ticket_grid.HideColumn('TITLE')', 'DISABLED':false}]">Индикатор</td>
+								<td oncontextmenu="return [{'TEXT': 'Скрыть колонку', 'ONCLICK':'bxGrid_ticket_grid.HideColumn('TITLE')', 'DISABLED':false}]">ID</td>
+
 								<td oncontextmenu="return [{'TEXT': 'Скрыть колонку', 'ONCLICK':'bxGrid_ticket_grid.HideColumn('TITLE')', 'DISABLED':false}]">Заголовок</td>
-								<td onclick="bxGrid_ticket_grid.Sort('/personal/?by=s_timestamp_x&amp;order=', 's_timestamp_x', '', 'asc', arguments);" oncontextmenu="return [{'TEXT': 'Сортировать по возрастанию', 'ONCLICK':'bxGrid_ticket_grid.Sort('/personal/?by=s_timestamp_x&amp;order=', 'desc')', 'ICONCLASS':'grid-sort-asc'}, {'TEXT': 'Сортировать по убыванию', 'ONCLICK':'bxGrid_ticket_grid.Sort('/personal/?by=s_timestamp_x&amp;order=', 'asc')', 'ICONCLASS':'grid-sort-desc'}, {'TEXT': 'Скрыть колонку', 'ONCLICK':'bxGrid_ticket_grid.HideColumn('TIMESTAMP_X')', 'DISABLED':false}]" title="Сортировка: Изменено" class="bx-sortable">
-									<table cellspacing="0" class="bx-grid-sorting">
-										<tbody>
-										<tr>
-											<td>Изменено</td>
-											<td class="bx-sort-sign">
-												<div class="empty"></div>
-											</td>
-										</tr>
-										</tbody>
-									</table>
-								</td>
+								<td oncontextmenu="return [{'TEXT': 'Скрыть колонку', 'ONCLICK':'bxGrid_ticket_grid.HideColumn('TITLE')', 'DISABLED':false}]">Изменено</td>
+
 								<td oncontextmenu="return [{'TEXT': 'Скрыть колонку', 'ONCLICK':'bxGrid_ticket_grid.HideColumn('MODIFIED_BY')', 'DISABLED':false}]">Кто изменил</td>
 								<td oncontextmenu="return [{'TEXT': 'Скрыть колонку', 'ONCLICK':'bxGrid_ticket_grid.HideColumn('MESSAGES')', 'DISABLED':false}]">Сооб.</td>
 								<td oncontextmenu="return [{'TEXT': 'Скрыть колонку', 'ONCLICK':'bxGrid_ticket_grid.HideColumn('STATUS_NAME')', 'DISABLED':false}]" class="bx-right">Статус</td>
@@ -251,8 +222,8 @@
 						</tbody>
 					</table>
 				</form>
-				<div class="text-center m-t-15">
-					<input type="submit" name="save" value="Отправить">
+				<div class="m-t-15 button__spacing">
+					<a class="quest__btn" href="#">Отправить</a>
 				</div>
 			</div>
 

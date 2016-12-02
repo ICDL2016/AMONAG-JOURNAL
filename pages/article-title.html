@@ -69,6 +69,43 @@
 				<div class="site__title">
 					<a href="#">AMONAG <span>JOURNAL</span></a>
 				</div>
+
+				<div class="select__view">
+					<div class="inside__select">
+						<select name="" id="">
+							<option value="">View 1</option>
+							<option value="">View 2</option>
+							<option value="">View 3</option>
+							<option value="">View 4</option>
+							<option value="">View 5</option>
+						</select>
+					</div>
+					<div class="inside__select lang__icon">
+						<select name="" id="">
+							<option value="">RU</option>
+							<option value="">En</option>
+							<option value="">Es</option>
+							<option value="">De</option>
+							<option value="">Fr</option>
+							<option value="">It</option>
+						</select>
+					</div>
+					<div class="inside__select">
+						<span class="plus">+</span>
+						<select name="" id="">
+							<option value="">RU</option>
+							<option value="">En</option>
+							<option value="">Es</option>
+							<option value="">De</option>
+							<option value="">Fr</option>
+							<option value="">It</option>
+						</select>
+					</div>
+
+					<div class="clear"></div>
+
+				</div>
+
 			</div>
 			<div class="clear"></div>
 		</div>
@@ -531,9 +568,25 @@
 	<script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
 	<script src="js/masonry.pkgd.min.js"></script>
 	<script type="text/javascript" src="source/jquery.fancybox.js?v=2.1.5"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 	<script src="js/common.js"></script>
 	<script>
 		$('.fancybox').fancybox();
+
+		$( function() {
+			$( "#speed" ).selectmenu();
+
+			$( "#files" ).selectmenu();
+
+			$( "#number" )
+					.selectmenu()
+					.selectmenu( "menuWidget" )
+					.addClass( "overflow" );
+
+			$( "#salutation" ).selectmenu();
+		} );
+
+
 	</script>
 </body>
 </html>

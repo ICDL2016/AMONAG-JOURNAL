@@ -170,7 +170,7 @@ $( ".nav__btn>li" ).click(function() {
 $(document).ready(function(){
 
 	// Устанавливаем обработчик потери фокуса для всех полей ввода текста
-	$('input#name, input#email, textarea#message').unbind().blur( function(){
+	$('input#name,input#login,input#password, input#email, textarea#message').unbind().blur( function(){
 
 		// Для удобства записываем обращения к атрибуту и значению каждого поля в переменные
 		var id = $(this).attr('id');
@@ -204,6 +204,67 @@ $(document).ready(function(){
 				{
 					$(this).removeClass('not_error').addClass('error');
 					$(this).next('.error-box').html('&bull; поле "Имя" обязательно для заполнения')
+						.css('color','red')
+						.animate({'paddingLeft':'10px'},400)
+						.animate({'paddingLeft':'5px'},400);
+				}
+				break;
+
+
+			// Проверка поля "Имя"
+			case 'login':
+				var rv_login = /^[a-zA-Zа-яА-Я]+$/; // используем регулярное выражение
+
+				// Eсли длина имени больше 2ух символов, оно не пустое и удовлетворяет рег. выражению,
+				// то добавляем этому полю класс .not_error,
+				// и ниже в контейнер для ошибок выводим слово "Принято", т.е. валидация для этого поля пройдена успешно
+
+				if(val.length > 2 && val != '' && rv_login.test(val))
+				{
+					$(this).addClass('not_error');
+					$(this).next('.error-box').text(' ')
+						.css('color','green')
+						.animate({'paddingLeft':'10px'},400)
+						.animate({'paddingLeft':'5px'},400);
+				}
+
+				// Иначе, мы удаляем класс not-error, и заменяем его на класс error, говоря о том что поле содержит ошибку валидации,
+				// и ниже в наш контейнер выводим сообщение об ошибке и параметры для верной валидации
+
+				else
+				{
+					$(this).removeClass('not_error').addClass('error');
+					$(this).next('.error-box').html('&bull; поле "Логин" обязательно для заполнения')
+						.css('color','red')
+						.animate({'paddingLeft':'10px'},400)
+						.animate({'paddingLeft':'5px'},400);
+				}
+				break;
+
+			// Проверка поля "Имя"
+			case 'password':
+				var rv_password = /^[a-zA-Zа-яА-Я]+$/; // используем регулярное выражение
+
+				// Eсли длина имени больше 2ух символов, оно не пустое и удовлетворяет рег. выражению,
+				// то добавляем этому полю класс .not_error,
+				// и ниже в контейнер для ошибок выводим слово "Принято", т.е. валидация для этого поля пройдена успешно
+
+				if(val.length > 2 && val != '' && rv_password.test(val))
+				{
+					$(this).addClass('not_error');
+					$(this).next('.error-box').text(' ')
+						.css('color','green')
+						.animate({'paddingLeft':'10px'},400)
+						.animate({'paddingLeft':'5px'},400);
+				}
+
+				// Иначе, мы удаляем класс not-error, и заменяем его на класс error, говоря о том что поле содержит ошибку валидации,
+				// и ниже в наш контейнер выводим сообщение об ошибке и параметры для верной валидации
+
+				else
+				{
+					$(this).removeClass('not_error').addClass('error');
+					$(this).next('.error-box').html('&bull; поле "пароль" обязательно для заполнения')
 						.css('color','red')
 						.animate({'paddingLeft':'10px'},400)
 						.animate({'paddingLeft':'5px'},400);
@@ -361,7 +422,9 @@ $( ".order__lang li a" ).click(function() {
 
 
 
-
+$( ".jQtooltip" ).click(function() {
+	$( this ).find('div').toggleClass( 'active' );
+});
 
 
 

@@ -1205,15 +1205,6 @@ table.bx-interface-grid {
 table.bx-interface-grid tr.bx-grid-gutter td.bx-left {
 	border-left: 1px solid #d6d6d6;
 }
-table.bx-interface-grid tr.bx-grid-gutter td {
-	height: 5px;
-	background-color: #e5e5e5;
-	border-right: 1px solid #ebebeb;
-	border-top: 1px solid #d9d9d9;
-	border-bottom: 0;
-	border-left: none;
-	padding: 0;
-}
 table.bx-interface-grid td.bx-left {
 	border-left: 1px solid #ededed;
 }
@@ -1237,7 +1228,6 @@ div.empty {
 	overflow: hidden;
 }
 table.bx-interface-grid tr.bx-grid-gutter td {
-	height: 5px;
 	background-color: #e5e5e5;
 	border-right: 1px solid #ebebeb;
 	border-top: 1px solid #d9d9d9;
@@ -1428,6 +1418,9 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
 }
 .user__ava:hover {
 	background: #8f228f;
+}
+.button__spacing {
+	padding: 10px 0 0;
 }
 .user__info_block {
 	overflow: hidden;
@@ -2472,7 +2465,7 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
 	padding: 30px 0 50px;
 }
 .notice__ul {
-	padding: 15px 0;
+	padding: 15px 0 0;
 }
 .notice__ul li {
 	margin-bottom: 10px;
@@ -2510,10 +2503,10 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
 }
 .back__to_list a {
 	color: #3e3e3e;
+	text-decoration: none;
 }
 .back__to_list a:hover {
 	color: #6d206d;
-	text-decoration: none;
 }
 .notifications__text {
 	color: #6d206d;
@@ -2561,16 +2554,19 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
 	cursor: pointer;
 	transition: 0.3s;
 }
-.articles__header .icon a:hover,
+
 .articles__header .icon a.active{
 	color: #6d206d !important;
+}
+.articles__header .icon a:hover{
+	color: rgba(109,32,109,0.9) !important;
 }
 .check__in a {
 	position: relative;
 }
 .check__in a .explained {
 	display: none;
-	width: 300px;
+	max-width: 300px;
 	background: #c7c7c7;
 	position: absolute;
 	left: 30px;
@@ -2728,4 +2724,35 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
 	padding: 3px 7px;
 	border-radius: 50%;
 	cursor: pointer;
+}
+.select__view select {
+	width: 65px;
+	height: 22px;
+	background: rgba(255,255,255,0.7);
+	border: none;
+	cursor: pointer;
+}
+.select__view .inside__select {
+	float: left;
+	overflow: hidden;
+}
+.select__view .inside__select option {
+	background: rgba(109,32,109,0.9);
+	color: #fff;
+	font-size: 15px;
+}
+.select__view .inside__select select option {
+	width: 60px;
+}
+.inside__select {
+	padding: 1px 5px;
+}
+.plus {
+	display: block;
+	color: #fff;
+	float: left;
+	margin: 4px 5px 0 -5px;
+}
+.inside__select:first-child {
+	padding-left: 15px;
 }

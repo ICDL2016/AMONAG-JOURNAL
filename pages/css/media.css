@@ -39,8 +39,9 @@
 		-ms-animation: none !important;
 		animation: none !important;
 	}
-	.jQtooltip div {
-		display: none !important;
+	.jQtooltip.txtool div {
+		right: inherit !important;
+		left: 0px !important;
 	}
 	.specialist__block .sp_bl {
 		margin-bottom: 10px;
@@ -137,7 +138,9 @@
 		position: relative;
 		z-index: 9;
 	}
-
+	.select__view {
+		display: none;
+	}
 }
 @media only screen and (max-width : 540px) {
 	.content__restaurant_bs .restaurant__sidebar {
