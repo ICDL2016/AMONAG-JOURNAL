@@ -2400,9 +2400,7 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
 .tab_btn {
 	display: none;
 }
-.tab_btn:first-child {
-	display: block;
-}
+
 .sponsorship__block .tab__cont {
 	width: 260px;
 	margin: 0 auto;
@@ -2566,7 +2564,7 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
 }
 .check__in a .explained {
 	display: none;
-	max-width: 300px;
+	width: 300px;
 	background: #c7c7c7;
 	position: absolute;
 	left: 30px;
@@ -2755,4 +2753,10 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
 }
 .inside__select:first-child {
 	padding-left: 15px;
+}
+.fr_block .tab_btn:first-child {
+	display: block;
+}
+.fr_block {
+	background: #6d206d;
 }

@@ -119,11 +119,11 @@
 
 									<div class="tab__cont">
 										<div class="tabs">
-											<span class="tab active">
+											<span class="tab">
 												<span class="pr">1000<span class="rur">p</span></span>
 												1 месяц
 											</span>
-											<span class="tab">
+											<span class="tab active">
 												<span class="pr">3000<span class="rur">p</span></span>
 												6 месяцев
 											</span>
@@ -175,11 +175,11 @@
 
 									<div class="tab__cont">
 										<div class="tabs">
-											<span class="tab active">
+											<span class="tab">
 												<span class="pr">1000<span class="rur">p</span></span>
 												1 месяц
 											</span>
-											<span class="tab">
+											<span class="tab active">
 												<span class="pr">3000<span class="rur">p</span></span>
 												6 месяцев
 											</span>
@@ -231,11 +231,11 @@
 
 									<div class="tab__cont">
 										<div class="tabs">
-											<span class="tab active">
+											<span class="tab">
 												<span class="pr">1000<span class="rur">p</span></span>
 												1 месяц
 											</span>
-											<span class="tab">
+											<span class="tab active">
 												<span class="pr">3000<span class="rur">p</span></span>
 												6 месяцев
 											</span>
@@ -287,11 +287,11 @@
 
 									<div class="tab__cont">
 										<div class="tabs">
-											<span class="tab active">
+											<span class="tab">
 												<span class="pr">1000<span class="rur">p</span></span>
 												1 месяц
 											</span>
-											<span class="tab">
+											<span class="tab active">
 												<span class="pr">3000<span class="rur">p</span></span>
 												6 месяцев
 											</span>
@@ -343,11 +343,11 @@
 
 									<div class="tab__cont">
 										<div class="tabs">
-											<span class="tab active">
+											<span class="tab">
 												<span class="pr">1000<span class="rur">p</span></span>
 												1 месяц
 											</span>
-											<span class="tab">
+											<span class="tab active">
 												<span class="pr">3000<span class="rur">p</span></span>
 												6 месяцев
 											</span>
@@ -431,10 +431,20 @@
 	<script>
 		$('.fancybox').fancybox();
 
+		$('.tab_content').each(function() {
+			$(this).find('.tab_btn').eq($(this).parents('.tab__cont').find('.active').index()).css('display', 'block');
+		});
+
+
 		$(".tab__cont .tab").click(function() {
-			$(".tab__cont .tab").removeClass("active").eq($(this).index()).addClass("active");
-			$(".tab_btn").hide().eq($(this).index()).fadeIn()
-		}).eq(0).addClass("active");
+			var thisIndex = $(this).index();
+
+			$(this).parents('.tab__cont').find('.tab').removeClass('active');
+			$(this).addClass('active');
+
+			$(this).parents('.tab__cont').find('.tab_content').find('.tab_btn').hide();
+			$(this).parents('.tab__cont').find('.tab_content').find('.tab_btn').eq(thisIndex).show();
+		});
 	</script>
 </body>
 </html>

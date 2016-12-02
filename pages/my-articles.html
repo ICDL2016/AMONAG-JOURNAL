@@ -156,21 +156,21 @@
 					<div class="sponsorship__block">
 						<div class="tab__cont">
 							<div class="tabs">
-										<span class="tab active">
-											<span class="pr">300<span class="rur">p</span></span>
-											<i class="fa fa-star" aria-hidden="true"></i>
-										</span>
-										<span class="tab">
-											<span class="pr">500<span class="rur">p</span></span>
-											<i class="fa fa-star" aria-hidden="true"></i>
-											<i class="fa fa-star" aria-hidden="true"></i>
-										</span>
-										<span class="tab">
-											<span class="pr">700<span class="rur">p</span></span>
-											<i class="fa fa-star" aria-hidden="true"></i>
-											<i class="fa fa-star" aria-hidden="true"></i>
-											<i class="fa fa-star" aria-hidden="true"></i>
-										</span>
+								<span class="tab">
+									<span class="pr">300<span class="rur">p</span></span>
+									<i class="fa fa-star" aria-hidden="true"></i>
+								</span>
+								<span class="tab active">
+									<span class="pr">500<span class="rur">p</span></span>
+									<i class="fa fa-star" aria-hidden="true"></i>
+									<i class="fa fa-star" aria-hidden="true"></i>
+								</span>
+								<span class="tab">
+									<span class="pr">700<span class="rur">p</span></span>
+									<i class="fa fa-star" aria-hidden="true"></i>
+									<i class="fa fa-star" aria-hidden="true"></i>
+									<i class="fa fa-star" aria-hidden="true"></i>
+								</span>
 							</div>
 							<div class="tab_content">
 								<div class="tab_btn">
@@ -224,11 +224,11 @@
 					<div class="sponsorship__block">
 						<div class="tab__cont">
 							<div class="tabs">
-								<span class="tab active">
+								<span class="tab">
 									<span class="pr">300<span class="rur">p</span></span>
 									<i class="fa fa-star" aria-hidden="true"></i>
 								</span>
-								<span class="tab">
+								<span class="tab active">
 									<span class="pr">500<span class="rur">p</span></span>
 									<i class="fa fa-star" aria-hidden="true"></i>
 									<i class="fa fa-star" aria-hidden="true"></i>
@@ -290,11 +290,11 @@
 					<div class="sponsorship__block">
 						<div class="tab__cont">
 							<div class="tabs">
-								<span class="tab active">
+								<span class="tab">
 									<span class="pr">300<span class="rur">p</span></span>
 									<i class="fa fa-star" aria-hidden="true"></i>
 								</span>
-								<span class="tab">
+								<span class="tab active">
 									<span class="pr">500<span class="rur">p</span></span>
 									<i class="fa fa-star" aria-hidden="true"></i>
 									<i class="fa fa-star" aria-hidden="true"></i>
@@ -364,11 +364,11 @@
 					<div class="sponsorship__block">
 						<div class="tab__cont">
 							<div class="tabs">
-								<span class="tab active">
+								<span class="tab">
 									<span class="pr">300<span class="rur">p</span></span>
 									<i class="fa fa-star" aria-hidden="true"></i>
 								</span>
-								<span class="tab">
+								<span class="tab active">
 									<span class="pr">500<span class="rur">p</span></span>
 									<i class="fa fa-star" aria-hidden="true"></i>
 									<i class="fa fa-star" aria-hidden="true"></i>
@@ -440,10 +440,20 @@
 	<script src="js/masonry.pkgd.min.js"></script>
 	<script src="js/common.js"></script>
 	<script>
+		$('.tab_content').each(function() {
+			$(this).find('.tab_btn').eq($(this).parents('.tab__cont').find('.active').index()).css('display', 'block');
+		});
+
+
 		$(".tab__cont .tab").click(function() {
-			$(".tab__cont .tab").removeClass("active").eq($(this).index()).addClass("active");
-			$(".tab_btn").hide().eq($(this).index()).fadeIn()
-		}).eq(0).addClass("active");
+			var thisIndex = $(this).index();
+
+			$(this).parents('.tab__cont').find('.tab').removeClass('active');
+			$(this).addClass('active');
+
+			$(this).parents('.tab__cont').find('.tab_content').find('.tab_btn').hide();
+			$(this).parents('.tab__cont').find('.tab_content').find('.tab_btn').eq(thisIndex).show();
+		});
 	</script>
 </body>
 </html>
