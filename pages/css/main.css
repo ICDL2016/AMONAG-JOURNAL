@@ -173,6 +173,7 @@ img {
 	padding: 6px 0 0 10px;
 	float: left;
 	font-size: 14px;
+	position: relative;
 }
 .nav__btn {
 	float: right;
@@ -236,12 +237,15 @@ img {
 	background: #8f228f;
 }
 .search__block:hover input[type="text"] {
-	background: #fff;
+	background: rgba(255,255,255,0.6);
 	border-color: #8f228f;
+}
+.search__block input[type="text"]:focus {
+	background: #d5d5d5;
 }
 .search__block input[type="text"] {
 	width: 100%;
-	background: rgba(255,255,255,0.6);
+	background: rgba(255,255,255,1);
 	border: 1px solid #6d206d;
 	padding: 2px 0 0 5px;
 	font-size: 12px;
@@ -1262,7 +1266,7 @@ table.bx-interface-grid td.bx-left {
 	border-left: 1px solid #ededed;
 }
 table.bx-interface-grid td {
-	padding: 7px 5px 3px 5px;
+	padding: 6px 5px 5px 5px;
 	font-size: 88%;
 	border-right: 1px solid #ededed;
 	vertical-align: top;
@@ -2468,6 +2472,7 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
 .notice__ul li {
 	margin-bottom: 10px;
 	font-size: 14px;
+	color: #6d206d;
 }
 .notice__ul li span {
 	color: #3e3e3e;
@@ -2499,12 +2504,16 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
 .back__to_list {
 	text-align: center;
 }
+b {
+	font-weight: bold;
+}
 .back__to_list a {
 	color: #3e3e3e;
 	text-decoration: none;
 }
 .back__to_list a:hover {
 	color: #6d206d;
+	text-decoration: underline;
 }
 .notifications__text {
 	color: #6d206d;
@@ -2562,7 +2571,7 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
 .check__in a {
 	position: relative;
 }
-.check__in a .explained {
+.explained {
 	display: none;
 	width: 300px;
 	background: #c7c7c7;
@@ -2583,7 +2592,7 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
 	overflow: hidden;
 	z-index: 999;
 }
-.check__in a .explained i {
+.explained i {
 	display: block;
 	float: right;
 	font-size: 14px;
@@ -2723,24 +2732,9 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
 	border-radius: 50%;
 	cursor: pointer;
 }
-.select__view select {
-	width: 65px;
-	height: 22px;
-	background: rgba(255,255,255,0.7);
-	border: none;
-	cursor: pointer;
-}
+
 .select__view .inside__select {
 	float: left;
-	overflow: hidden;
-}
-.select__view .inside__select option {
-	background: rgba(109,32,109,0.9);
-	color: #fff;
-	font-size: 15px;
-}
-.select__view .inside__select select option {
-	width: 60px;
 }
 .inside__select {
 	padding: 1px 5px;
@@ -2759,4 +2753,76 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
 }
 .fr_block {
 	background: #6d206d;
+}
+.lang__icon li,
+.lang__icon .jq-selectbox__select {
+	text-transform: uppercase;
+}
+.lang__icon .jq-selectbox__search {
+	display: none;
+}
+.sounded {
+	position: relative;
+}
+.sounded:after {
+	position: absolute;
+	content: "";
+	display: block;
+	width: 12px;
+	height: 12px;
+	background: url("../img/sound.png") no-repeat;
+	left: 40px;
+	top: 50%;
+	margin-top: -6px;
+}
+.sounded.selected:after {
+	position: absolute;
+	content: "";
+	display: block;
+	width: 12px;
+	height: 12px;
+	background: url("../img/sound-active.png") no-repeat;
+	left: 40px;
+	top: 50%;
+	margin-top: -6px;
+}
+.jq-selectbox li.sounded:hover:after {
+	background: url("../img/sound-active.png") no-repeat;
+}
+.quest__icon a {
+	display: block;
+	width: 21px;
+	height: 21px;
+	background: #b690b6;
+	color: #fff;
+	border-radius: 50%;
+	line-height: 23px;
+	box-sizing: border-box;
+	padding: 0 0 0 5px;
+}
+.head__quest_icon .explained {
+	left: inherit !important;
+	right: -310px;
+}
+.head__quest_icon {
+	position: relative;
+}
+.head__quest_icon i {
+	color: rgba(255,255,255,0.7);
+	cursor: pointer;
+}
+.span__position {
+	position: relative;
+}
+.relative__pos {
+	position: relative;
+}
+.relative__pos .span__position {
+	position: absolute;
+	right: -25px;
+	top: 4px;
+	font-size: 20px;
+}
+.quest__icon .head__quest_icon i.fa-question-circle {
+	font-size: 21px;
 }

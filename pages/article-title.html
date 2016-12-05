@@ -27,6 +27,7 @@
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/media.css">
+	<link rel="stylesheet" href="css/jquery.formstyler.css">
 
 	<script src="libs/modernizr/modernizr.js"></script>
 
@@ -67,7 +68,7 @@
 			</ul>
 			<div class="search__block">
 				<div class="site__title">
-					<a href="#">AMONAG <span>JOURNAL</span></a>
+					<a href="#">AMONAG <span class="none">JOURNAL</span></a>
 				</div>
 
 				<div class="select__view">
@@ -75,9 +76,6 @@
 						<select name="" id="">
 							<option value="">View 1</option>
 							<option value="">View 2</option>
-							<option value="">View 3</option>
-							<option value="">View 4</option>
-							<option value="">View 5</option>
 						</select>
 					</div>
 					<div class="inside__select lang__icon">
@@ -88,11 +86,35 @@
 							<option value="">De</option>
 							<option value="">Fr</option>
 							<option value="">It</option>
-						</select>
-					</div>
-					<div class="inside__select">
-						<span class="plus">+</span>
-						<select name="" id="">
+							<option class="sounded" value="">En</option>
+							<option value="">Es</option>
+							<option value="">De</option>
+							<option value="">Fr</option>
+							<option class="sounded" value="">It</option>
+							<option class="sounded" value="">RU</option>
+							<option value="">En</option>
+							<option value="">Es</option>
+							<option class="sounded" value="">De</option>
+							<option value="">Fr</option>
+							<option class="sounded" value="">It</option>
+							<option value="">RU</option>
+							<option value="">En</option>
+							<option value="">Es</option>
+							<option value="">De</option>
+							<option value="">Fr</option>
+							<option value="">It</option><option value="">Fr</option>
+							<option value="">It</option>
+							<option class="sounded" value="">En</option>
+							<option value="">Es</option>
+							<option value="">De</option>
+							<option value="">Fr</option>
+							<option class="sounded" value="">It</option>
+							<option class="sounded" value="">RU</option>
+							<option value="">En</option>
+							<option value="">Es</option>
+							<option class="sounded" value="">De</option>
+							<option value="">Fr</option>
+							<option class="sounded" value="">It</option>
 							<option value="">RU</option>
 							<option value="">En</option>
 							<option value="">Es</option>
@@ -100,6 +122,67 @@
 							<option value="">Fr</option>
 							<option value="">It</option>
 						</select>
+					</div>
+					<div class="inside__select lang__icon">
+						<span class="plus">+</span>
+						<select name="" id="">
+							<option value="">RU</option>
+							<option class="sounded" value="">En</option>
+							<option value="">Es</option>
+							<option value="">De</option>
+							<option value="">Fr</option>
+							<option class="sounded" value="">It</option>
+							<option class="sounded" value="">RU</option>
+							<option value="">En</option>
+							<option value="">Es</option>
+							<option class="sounded" value="">De</option>
+							<option value="">Fr</option>
+							<option class="sounded" value="">It</option>
+							<option value="">RU</option>
+							<option value="">En</option>
+							<option value="">Es</option>
+							<option value="">De</option>
+							<option value="">Fr</option>
+							<option value="">It</option>
+							<option value="">RU</option>
+							<option value="">En</option>
+							<option value="">Es</option>
+							<option value="">De</option>
+							<option value="">Fr</option><option value="">De</option>
+							<option value="">Fr</option>
+							<option class="sounded" value="">It</option>
+							<option class="sounded" value="">RU</option>
+							<option value="">En</option>
+							<option value="">Es</option>
+							<option class="sounded" value="">De</option>
+							<option value="">Fr</option>
+							<option class="sounded" value="">It</option>
+							<option value="">RU</option>
+							<option value="">En</option>
+							<option value="">Es</option>
+							<option value="">De</option>
+							<option value="">Fr</option>
+							<option value="">It</option>
+							<option value="">RU</option>
+							<option value="">En</option>
+							<option value="">Es</option>
+							<option value="">De</option>
+							<option value="">Fr</option>
+							<option value="">It</option>
+						</select>
+					</div>
+					<div class="inside__select quest__icon">
+
+						<span class="span__position">
+							<span class="head__quest_icon">
+								<i class="fa fa-question-circle" aria-hidden="true"></i>
+								<span class="explained">
+									<i>x</i>
+									Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Происходит от одной из строк в разделе 1.10.32
+								</span>
+							</span>
+						</span>
+
 					</div>
 
 					<div class="clear"></div>
@@ -567,6 +650,7 @@
 	<script src="libs/plugins-scroll/plugins-scroll.js"></script>
 	<script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
 	<script src="js/masonry.pkgd.min.js"></script>
+	<script src="js/jquery.formstyler.js"></script>
 	<script type="text/javascript" src="source/jquery.fancybox.js?v=2.1.5"></script>
 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 	<script src="js/common.js"></script>
@@ -585,6 +669,15 @@
 
 			$( "#salutation" ).selectmenu();
 		} );
+
+
+		(function($) {
+			$(function() {
+				$('input, select').styler({
+					selectSearch: true
+				});
+			});
+		})(jQuery);
 
 
 	</script>

@@ -41,7 +41,7 @@
 	}
 	.jQtooltip.txtool div {
 		right: inherit !important;
-		left: 0px !important;
+		left: inherit !important;
 	}
 	.specialist__block .sp_bl {
 		margin-bottom: 10px;
@@ -121,6 +121,10 @@
 	.page_nav li {
 		margin-bottom: 5px;
 	}
+	.head__quest_icon .explained {
+		right: -20px;
+		top: 125%
+	}
 	
 }
 @media only screen and (max-width : 580px) {
@@ -128,6 +132,9 @@
 		position: absolute;
 		top: 8px;
 		left: 0;
+	}
+	.without__search {
+		position: inherit !important;
 	}
 	.search__block input[type="text"] {
 		background: #fff;
@@ -158,7 +165,7 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-	.site__title span {
+	.site__title span.none {
 		display: none;
 	}
 	.nav__btn li .sidebar__nav {
@@ -168,6 +175,14 @@
 		padding: 0;
 		float: none;
 		width: 100%;
+	}
+	.head__quest_icon {
+		position: inherit;
+	}
+	.head__quest_icon .explained {
+		top: 35px;
+		right: 0;
+		margin-right: -150px;
 	}
 
 }

@@ -428,7 +428,9 @@ $( ".jQtooltip" ).click(function() {
 
 
 
-
+$( ".head__quest_icon i" ).click(function() {
+	$( '.head__quest_icon .explained').fadeToggle( 300 );
+});
 
 
 
