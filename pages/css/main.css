@@ -240,19 +240,27 @@ img {
 	background: rgba(255,255,255,0.6);
 	border-color: #8f228f;
 }
-.search__block input[type="text"]:focus {
-	background: #d5d5d5;
-}
+.search__block input[type="text"]::-webkit-input-placeholder {color:#fff;}
+.search__block input[type="text"]::-moz-placeholder          {color:#fff;}/* Firefox 19+ */
+.search__block input[type="text"]:-moz-placeholder           {color:#fff;}/* Firefox 18- */
+.search__block input[type="text"]:-ms-input-placeholder      {color:#fff;}
+
+.search__block input[type="text"]:hover::-webkit-input-placeholder {color:#868586;}
+.search__block input[type="text"]:hover::-moz-placeholder          {color:#868586;}/* Firefox 19+ */
+.search__block input[type="text"]:hover:-moz-placeholder           {color:#868586;}/* Firefox 18- */
+.search__block input[type="text"]:hover:-ms-input-placeholder      {color:#868586;}
+
 .search__block input[type="text"] {
 	width: 100%;
-	background: rgba(255,255,255,1);
+	background: #b690b6;
 	border: 1px solid #6d206d;
 	padding: 2px 0 0 5px;
 	font-size: 12px;
 	box-sizing: border-box;
 	height: 26px;
 	line-height: 1;
-	transition: 0.3s;
+	transition: 0.5s;
+	color: #4a4a4a;
 }
 .search__btn {
 	color: #fff;
