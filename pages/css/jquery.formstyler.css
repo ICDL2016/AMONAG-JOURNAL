@@ -224,11 +224,11 @@
 .jq-selectbox {
 	vertical-align: middle;
 	cursor: pointer;
-	width: 70px;
+	width: 60px;
 }
 .jq-selectbox__select {
 	height: 21px;
-	padding: 0 20px 0 5px;
+	padding: 0 10px 0 5px;
 	background: #b690b6;
 	font: 12px/23px Arial, sans-serif;
 	color: #fff;
@@ -317,7 +317,7 @@
 	padding: 0;
 }
 .jq-selectbox li {
-	padding: 5px 10px 3px;
+	padding: 5px 5px 3px;
 	-webkit-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
