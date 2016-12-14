@@ -399,15 +399,7 @@ $('#waveform').on('change', function() {
   $('.scroll-waveform').width(waveformWidth);
 });
 
-var lastScrollTop = 0;
-$(window).scroll(function(event){
-  var st = $(this).scrollTop();
-  if (st > lastScrollTop){
-    // downscroll code
-    $('.mob__select').addClass('hide__select_mob');
-  } else {
-    // upscroll code
-    $('.mob__select').addClass('hide__select_mob');
-  }
-  lastScrollTop = st;
-});
+
+
+
+
