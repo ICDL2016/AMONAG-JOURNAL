@@ -680,20 +680,19 @@
 		})(jQuery);
 
 
-		$(function () {
 
-			var element = $(".mob__select"), display;
-
-			$(window).scroll(function () {
-
-				display = $(this).scrollTop() <= 50;
-
-				display != element.css('opacity') && element.stop().animate({ 'opacity': display }, 100);
-
-			});
-
+		$(document).ready(function() {
+			var w = $(window).width();
+			if (w <= 580) {
+				$(function () {
+					var element = $(".mob__select"), display;
+					$(window).scroll(function () {
+						display = $(this).scrollTop() <= 50;
+						display != element.css('opacity') && element.stop().animate({ 'opacity': display }, 100);
+					});
+				});
+			}
 		});
-
 
 
 
