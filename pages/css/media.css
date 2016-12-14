@@ -1,8 +1,13 @@
 /*==========  Desktop First Method  ==========*/
 
 /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1275px) {
-
+@media only screen and (max-width : 1024px) {
+	.check__in a .explained {
+		top: 50%;
+		left: 50%;
+		margin: -150px 0 0 -150px;
+		position: fixed;
+	}
 }
 
 /* Medium Devices, Desktops */
@@ -83,11 +88,7 @@
 	.check__in a {
 		position: inherit;
 	}
-	.check__in a .explained {
-		top: 50%;
-		left: 50%;
-		margin: -150px 0 0 -150px;
-	}
+
 }
 
 @media only screen and (max-width : 640px) {
@@ -153,9 +154,9 @@
 		position: absolute;
 		top: 45px;
 		left: -55px;
-		width: 300px;
+		width: 255px;
 	}
-	.select__view .head__quest_icon i {
+	.select__view .head__quest_icon i.fa-question-circle {
 		color: #6d206d;
 	}
 	.select__view .jq-selectbox__select {
@@ -200,6 +201,9 @@
 		top: 35px;
 		right: 0;
 		margin-right: -150px;
+	}
+	.mob__select .explained {
+		margin-right: -75px !important;
 	}
 	.two__lang_block {
 		overflow: visible;
