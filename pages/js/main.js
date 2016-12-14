@@ -395,3 +395,4 @@ $('#waveform').on('change', function() {
   var waveformWidth = $(this).width();
   $('.scroll-waveform').width(waveformWidth);
 });
+

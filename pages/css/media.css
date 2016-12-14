@@ -145,9 +145,26 @@
 		position: relative;
 		z-index: 9;
 	}
-	.select__view {
-		display: none;
+	.mobile__select_space {
+		padding-top: 20px;
+		background: #fff;
 	}
+	.select__view {
+		position: absolute;
+		top: 45px;
+		left: -55px;
+		width: 300px;
+	}
+	.select__view .head__quest_icon i {
+		color: #6d206d;
+	}
+	.select__view .jq-selectbox__select {
+		background: #6d206d;
+	}
+	.select__view .plus {
+		color: #6d206d;
+	}
+
 }
 @media only screen and (max-width : 540px) {
 	.content__restaurant_bs .restaurant__sidebar {
@@ -184,7 +201,9 @@
 		right: 0;
 		margin-right: -150px;
 	}
-
+	.two__lang_block {
+		overflow: visible;
+	}
 }
 
 /* Custom, iPhone Retina */
