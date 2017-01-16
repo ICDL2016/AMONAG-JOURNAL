@@ -41,7 +41,7 @@ table {
 }
 /* End of Eric Meyer's CSS Reset */
 html, body {
-	height: 96% !important;
+	height: 100% !important;
 }
 article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
 	display: block;
@@ -2946,4 +2946,10 @@ a {
 	text-decoration: none;
 	font-size: 12px;
 	line-height: 1;
+}
+.admin__header .header {
+	top: 148px;
+}
+.admin__header-turn .header {
+	top: 41px;
 }
