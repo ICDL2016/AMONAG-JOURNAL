@@ -2953,3 +2953,17 @@ a {
 .admin__header-turn .header {
 	top: 41px;
 }
+
+.admin__header-turn .sidebar__nav ul {
+	padding-top: 81px;
+}
+.admin__nav-turn ul {
+	padding-top: 40px !important;
+}
+
+.admin__header .sidebar__nav ul {
+	padding-top: 188px;
+}
+.admin__nav ul {
+	padding-top: 40px !important;
+}
